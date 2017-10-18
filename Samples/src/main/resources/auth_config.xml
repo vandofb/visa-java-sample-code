@@ -1,0 +1,8 @@
+<?xml version = "1.0"?>
+<auth>
+    <username></username>
+    <password></password>
+    <keystore_path></keystore_path>
+    <keystore_password></keystore_password>
+    <private_key_password></private_key_password>
+</auth>
