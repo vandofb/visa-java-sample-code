@@ -14,7 +14,7 @@ Sample code is available for the following capabilities:
 
 ## Getting Started
 
-The instructions will guide you make the first call to VDP from your local machine for development and testing purposes
+The instructions will guide you make the first call to VDP from your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ Edit the file /Samples/src/main/resources/auth_config.xml to set the fields show
     * Note the password asked in above step (X)
     * keytool -importkeystore -srckeystore key.p12 -srcstoretype PKCS12 -destkeystore key.jks
     * Enter the destination key store password and note it. (**KYESTORE_PASSOWORD**)
-    * When asked for source key store password enter X.
+    * When asked for source key store password, enter X.
     * keytool -import -alias ejbca -keystore key.jks -file VDPCA-SBX.pem -storepass <password>
     * Note the password entered in the above step. (**PRIVATE_KEY_PASSWORD**)
 
@@ -78,7 +78,7 @@ mvn test -pl Samples
 
 ## Versioning
 
-**1.0.0**
+**1.0**
 
 For the versions available, see the [releases on this repository](https://github.com/visa/java-sample-code/releases). 
 
