@@ -4,7 +4,7 @@ This repository hosts the Java sample code for the [Visa Developer Platform](htt
 
 If you are new to the Visa Developer Platform, please take a look at our [Getting Started Guide](https://developer.visa.com/vdpguide#get-started-overview) which walks you through the steps to make a basic helloworld API call.
 
-Once you are comfortable with the same and have also explored the documentation to know about the various API that Visa exposes, you can then use the Java sample code on this site as a starting point in your journey towards building your application.
+Once you are comfortable with the same and have also explored the documentation to know about the various APIs that Visa exposes, you can then use the Java sample code on this site as a starting point in your journey towards building your application.
 
 Sample code is available for the following capabilities:
 
@@ -53,12 +53,11 @@ Edit the file /Samples/src/main/resources/auth_config.xml to set the fields show
     * Under Certificates section, download the Visa Development Platform Certificate (From here on referred as VDPCA-SBX.pem)
   * Move to your download folder (**KEYSTORE_PATH**) and perform the following actions to generate the jks file:
     * openssl pkcs12 -export -in cert.pem -inkey "privateKey.pem" -certfile cert.pem -out key.p12
-    * Note the password asked in above step (X)
+    * Note the password asked in above step (**PRIVATE_KEY_PASSWORD**)
     * keytool -importkeystore -srckeystore key.p12 -srcstoretype PKCS12 -destkeystore key.jks
-    * Enter the destination key store password and note it. (**KYESTORE_PASSOWORD**)
-    * When asked for source key store password, enter X.
-    * keytool -import -alias ejbca -keystore key.jks -file VDPCA-SBX.pem -storepass <password>
-    * Note the password entered in the above step. (**PRIVATE_KEY_PASSWORD**)
+    * When asked for source key store password, enter PRIVATE_KEY_PASSWORD.
+    * Enter the destination key store password and note it. (**KEYSTORE_PASSWORD**)
+    * keytool -import -alias ejbca -keystore key.jks -file VDPCA-SBX.pem -storepass ``<KEYSTORE_PASSWORD>``
 
 
 * Run the below command to install and resolve all dependencies
